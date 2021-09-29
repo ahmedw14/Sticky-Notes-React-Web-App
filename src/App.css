@@ -1,0 +1,141 @@
+.App {
+  min-height: 100vh;
+  background: linear-gradient(#80FFDB, #64DFDF, #48BFE3, #5390D9, #5E60CE);
+  margin: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 50px;
+}
+
+
+.note{
+
+  background:#fef68a;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 1rem;
+  min-height: 200px; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+
+
+.note > .top >.delete_note{
+  background-color: transparent;
+  border-radius: 30px;
+  border: transparent;
+  float: right;
+}
+.note >.top> .delete_note:hover{
+  color: red;
+  font-size: large;
+  
+}
+.notes_list{
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+
+.App > .top{
+  display: flex;
+  max-width: 50%;
+  margin:auto;
+  padding-bottom: 50px;
+}
+.App > .top> .add_note{
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  width: 20%;
+  border: transparent;
+  outline: none;
+  background-color: rgba(44, 44, 44, 0.4);
+  flex: 1;
+  border-left: 3px solid;
+  font-size: larger;
+}
+.App > .top> .add_note:hover{
+  background-color:#5efda1 ;
+}
+.App > .top> .add_note:active{
+  background-color:#43a76c  ;
+}
+.App > .top> .search_bar{
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  margin: auto;
+  border: transparent;
+  outline: none;
+  background-color: rgba(44, 44, 44, 0.4);
+  width: 80%;
+  height: 32px;
+  text-align: center;
+  display: flex;
+  font-size: large;
+
+}
+
+
+.App > .top> .add_note>.new_note{
+
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 35px; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  
+}
+
+.new_note {
+  background:#fef68a;
+  margin-bottom: 10px;
+  border-radius: 30px;
+  padding: 1rem;
+  min-height: 200px; 
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.new_note >.top> .text{
+  background: transparent;
+  border: transparent;
+  resize: none;
+  outline: none;
+  width: 80%;
+
+
+}
+.new_note>.footer>.save{
+  float: right;
+  background: #5390D9;
+  border-radius: 30px;
+  border: transparent;
+  padding: 5px;
+  width: 30%;
+  outline: none;
+}
+.new_note>.footer>.save:active{
+  background: #5E60CE;
+}
+.new_note > .top >.delete_note{
+  background-color: transparent;
+  border-radius: 30px;
+  border: transparent;
+  float: right;
+}
+.new_note >.top> .delete_note:hover{
+  color: red;
+  
+}
